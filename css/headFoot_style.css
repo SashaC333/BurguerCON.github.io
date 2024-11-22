@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+/*Animacion para barra de navegacion*/
+@keyframes boom {
+    0%{padding: 40px;border-radius: 8px;}
+    75%{padding: 55px;border-radius: 15px;}
+    100%{padding: 50px;border-radius: 10px;}
+}
+
+
+header{
+    background-color: #F72F2A;
+    width: 1366px;
+    height: 200px;
+    padding: 30px;
+
+    display: flex;
+    justify-items: center;
+
+    background-image: radial-gradient(circle, #f4d80560 2px, transparent 3px);
+    background-size: 10px 10px; /* Tamaño del patrón */
+}
+
+header .header_col1{
+    width: 514px;
+    height: 150px;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+}
+header .header_col2{
+    width: 786px;
+    height: 150px;
+    padding: 10px;
+
+}
+
+/*barra de navegacion integrada al header*/
+nav ul{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+}
+
+
+nav ul a{
+    color: white;
+    height: 50px;
+    width: 125px;
+    padding: 30px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: .6s;
+
+    font-family: AcmeComic;
+    
+}
+
+
+nav ul a:hover{
+    animation: boom .5s ;
+    animation-fill-mode: forwards;
+    background-color:#f6f2e7;
+    /*background-color: #16BFCC;*/
+    color: #010001;
+    border: #010001 3px solid ;
+}
+
+header .imagen{
+    height: 80px;
+}
+
+.imagen img{
+    height: 90%;
+}
+header a{
+    text-decoration: none;
+}
+
+section{
+    background-color: #f6f2e7;
+}
+
+
+/*ELEMENTOS FOOTER*/
+footer{
+    
+    background-color: #010001;
+    width: 1366px;
+    height: 200px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    background-image: radial-gradient(circle, #f72d2a30 2px, transparent 1px);
+    background-size: 10px 10px; /* Tamaño del patrón */
+}
+
+footer .footer_col1{ /*footer columna con logo e iconos*/
+    width: 504px;
+    height: 150px;
+    margin-left: 5px;
+}
+
+.footer_col1 .sublogo{
+    width: 504px;
+    height: 80px;
+}
+
+.sublogo img{
+    height: 95%;
+}
+
+
+.footer_col1 .iconos{
+    width: 504px;
+    height: 55px;
+}
+
+.iconos ul{
+    height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.iconos ul li{
+    height: 55px;
+}
+
+.iconos li img{
+    height: 60%;
+}
+
+
+
+footer .footer_cols{ /*footer con links y avisos*/
+    width: 410px;
+    height: 150px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.footer_cols ul{
+    list-style: none;
+}
+
+.footer_cols li{
+    padding-bottom: 15px;
+}
+
+.footer_cols a{
+    padding: 10px;
+    text-decoration: none;
+    color: #F72F2A;
+    font-size: 20px;
+
+    transition: .5s;
+}
+.footer_cols a:hover{
+    color: #010001;
+    background-color:aliceblue;
+    border-radius: 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+/* Estilos para la galería */
+.gallery {
+    width: 1366px; /* Ancho de 1366px */
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    gap: 20px;
+    padding: 30px;
+    background-color: #f6f2e7;
+
+}
+
+.photo-item {
+    text-align: center;
+    background-color: #f4d905;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: #010001 3px solid;
+}
+
+.photo-item img {
+    border-bottom: 3px solid #F72F2A; /* Alineamos con el color del header */
+    width: 100%;
+}
+
+.photo-item p {
+    padding: 15px;
+    
+    font-size: 1rem;
+    color: #333;
+    border-top: 1px solid #F72F2A; /* Sección de texto separada */
+}
+
+.photo-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* En pantallas pequeñas, 2 columnas */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* En pantallas muy pequeñas, 1 columna */
+    }
+}

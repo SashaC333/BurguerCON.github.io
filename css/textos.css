@@ -1,0 +1,23 @@
+@font-face {
+    font-family: CuerpoTexto;
+    src: url(../fonts/texto/ComicNeue-Bold.ttf);
+}
+@font-face {
+    font-family: TitulosTexto;
+    src: url(../fonts/titulos/KOMIKAX_.ttf);
+}
+
+*{
+    font-family: CuerpoTexto;
+}
+
+h2{
+    font-family: TitulosTexto;
+}
+strong{
+    font-family: TitulosTexto;
+}
+
+.header_col2 .menu_nav a{
+    font-family: TitulosTexto;
+}

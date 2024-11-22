@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/textos.css">
+    <link rel="stylesheet" href="css/headFoot_style.css">
+    <link rel="stylesheet" href="css/formularioStyle.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logos -->
+        <div class="header_col1" id="top">
+            <a href="#"> <!-- Aqui va la direccion a la pagina de inicio -->
+                <div class="imagen">
+                    <img src="imgs_genericas/imagotipo.png" alt="ImagotipoBC">
+                    <img src="imgs_genericas/logotipoBC.png" alt="logotipoBC">
+                </div>
+            </a>
+        </div>
+
+        <!-- Barra de navegacion -->
+        <nav class=" header_col2">
+            <ul class="menu_nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="top_info">
+            <div class="contact-info">
+                <div class="columna">
+                    <h2>Contacto</h2>
+                    <p> +56 9 3388 3332</p>
+                    <p> info@comicsburger.cl</p>
+                </div>
+                <div class="columna">
+                    <h2>Dirección</h2>
+                    <p>Av. Providencia 2216</p>
+                    <p>Comuna: Providencia</p>
+                    <p>Región Metropolitana</p>
+                    <p>Código Postal: 7510055</p>
+                </div>
+                <div class="columna">
+                    <h2>Horarios</h2>
+                    <p>Lunes a Sábado</p>
+                    <p>12:30 - 20:00 hrs</p>
+                    <p>Domingos</p>
+                    <p>12:30 - 18:00 hrs</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form_container">
+            <div class="formulario">
+
+                <form action="#" method="post">
+                    <table>
+                        <center><h2>Contáctenos</h2></center>
+                        <br>
+                        <!-- <tr><td colspan="2">Contáctenos</td></tr>-->
+                        <tr>
+                            <td class="iz">
+                                <label for="name">Nombre:</label>
+                            </td><!-- Son las columnas -->
+                            <td class="der">
+                                <input type="text" id="name" name="nombre">
+                            </td>
+                        </tr> <!-- son los renglones -->
+                        <tr>
+                            <td class="iz">
+                                <label for="last">Apellido:</label>
+                            </td>
+                            <td class="der">
+                                <input type="text" id="last" name="apellido">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="iz">
+                                <label for="e-mail">E-mail:</label>
+                            </td>
+                            <td class="der">
+                                <input type="email" id="e-mail" name="correo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="iz">
+                                <label for="mensaje">Mensaje:</label>
+                            </td>
+                            <td class="der">
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="iz"><input type="reset" value="Borrar"></td>
+                            <td class="der"><input type="submit" value="Enviar"></td>
+                        </tr>
+                
+                    </table>
+                </form>
+            </div>
+
+
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108627.00139923755!2d-106.56481790273438!3d31.69967090000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d52c6e58c7f%3A0x381fa713fcf41d3a!2sCarl&#39;s%20Jr.%20Ejercito%20Nacional!5e0!3m2!1ses-419!2smx!4v1732087366095!5m2!1ses-419!2smx"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <!-- Logo e iconos -->
+        <div class="footer_col1">
+            <a href="#top"> <!-- te lleva a la cabeza de la pagina -->
+                <div class="sublogo">
+                    <img src="imgs_genericas/imagotipo.png" alt="ImagotipoBC">
+                    <img src="imgs_genericas/logotipoBC.png" alt="logotipoBC">
+                </div>
+            </a>
+
+            <div class="iconos"> <!-- redes sociales -->
+                <ul>
+                    <li><a href="#"><img src="imgs_genericas/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="imgs_genericas/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="imgs_genericas/tiktok.svg" alt="TikTok"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Avisos legales y de privacidad -->
+        <div class="footer_cols">
+            <ul>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Copyright ©BurgerCON 2024</a></li>
+                <li><a href="#">Sello</a></li>
+            </ul>
+        </div>
+        
+        <!-- Exploracion interna -->
+        <div class="footer_cols">
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
